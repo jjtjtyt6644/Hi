@@ -1,3 +1,6 @@
+print("Ui loading")
+wait(1)
+
 --[[
 
 Rayfield Interface Suite
@@ -2476,7 +2479,7 @@ function RayfieldLibrary:LoadConfiguration()
 		pcall(function()
 			if isfile(ConfigurationFolder .. "/" .. CFileName .. ConfigurationExtension) then
 				LoadConfiguration(readfile(ConfigurationFolder .. "/" .. CFileName .. ConfigurationExtension))
-				RayfieldLibrary:Notify({Title = "Configuration Loaded", Content = "The configuration file for this script has been loaded from a previous session"})
+				RayfieldLibrary:Notify({Title = "Configuration Loaded, pls wait", Content = "The configuration file for this script has been loaded from a previous session"})
 			end
 		end)
 	end
